@@ -47,7 +47,3 @@ def createFile():
 
     os.system("%temp%\\temp.vbs")
 
-
-
-print("cheking 4 virusers")
-superscan()
