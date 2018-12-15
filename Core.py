@@ -36,7 +36,7 @@ def foundvirus(virusname: str) -> str:
     return virusname
 
 
-def createFile() -> str:
+def createFile():
     file = open('%temp%\\temp.vbs', "a")
     file.write("Set oWMP = CreateObject(\"WMPlayer.OCX.7\") \n")
     file.write("Set colCDROMs = oWMP.cdromCollection \n")
