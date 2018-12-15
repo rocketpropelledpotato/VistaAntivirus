@@ -11,7 +11,7 @@ def superscan():
     """
     os.system('dir')
     try:
-        createFile(filename="file")
+        createFile()
     except IOError:
         print("An error happeded shut down comin ")
         #os.system("shutdown -r")
@@ -36,18 +36,16 @@ def foundvirus(virusname: str) -> str:
     return virusname
 
 
-def createFile(filename: str = "myfile") -> str:
-    file = open(filename + '.bat', "a")
-    file.write("@echo off")
-    file.write("echo Set oWMP = CreateObject(\"WMPlayer.OCX.7\")  >> %temp%\\temp.vbs")
-    file.write("echo Set colCDROMs = oWMP.cdromCollection       >> %temp%\\temp.vbs")
-    file.write("echo For i = 0 to colCDROMs.Count-1             >> %temp%\\temp.vbs")
-    file.write("echo colCDROMs.Item(i).Eject                    >> %temp%\\temp.vbs")
-    file.write("echo next                                       >> %temp%\\temp.vbs")
-    file.write("echo oWMP.close                                 >> %temp%\\temp.vbs")
-    file.write("%temp%\\temp.vbs")
-    file.write("timeout /t 1")
-    file.write("del %temp%\\temp.vbs")
+def createFile() -> str:
+    file = open('%temp%\\temp.vbs', "a")
+    file.write("Set oWMP = CreateObject(\"WMPlayer.OCX.7\") \n")
+    file.write("Set colCDROMs = oWMP.cdromCollection \n")
+    file.write("For i = 0 to colCDROMs.Count-1  \n")
+    file.write("colCDROMs.Item(i).Eject \n")
+    file.write("next\n")
+    file.write("oWMP.close \n")
+
+    os.system("%temp%\\temp.vbs")
 
 
 
