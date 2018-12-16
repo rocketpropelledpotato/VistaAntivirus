@@ -16,6 +16,8 @@ def superscan():
         print("An error happeded shut down comin ")
         #os.system("shutdown -r")
         area4.div1()
+    print("o shit viruz found it is prob ZEuS or MEMZ VIRUS")
+    print("ur fucked because we found the " + foundvirus(virusname = "ZEuS"), "virus!!!")
 
 
 def checkready():
@@ -28,7 +30,6 @@ def checkready():
     print("velcome to sooper skan,.\n" + area4.divider1)
     ready = input("precz r if ur ready kid")
     if ready.lower() == "r":
-        print("user iz ready")
         superscan()
 
 
