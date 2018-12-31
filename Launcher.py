@@ -1,5 +1,5 @@
 """
 launcher
 """
-import Core
-Core.checkready()
+from Core import checkready
+checkready()
