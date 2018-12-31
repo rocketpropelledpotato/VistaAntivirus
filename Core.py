@@ -16,8 +16,8 @@ def superscan():
         print("An error happeded shut down comin ")
         #os.system("shutdown -r")
         area4.div1()
-    print("o shit viruz found it is prob ZEuS or MEMZ VIRUS")
-    print("ur fucked because we found the " + foundvirus(virusname = "ZEuS"), "virus!!!")
+    print("o god viruz found it is prob ZEuS or MEMZ VIRUS")
+    print("ur not going to last long because we found the " + foundvirus(virusname = "ZEuS"), "virus!!!")
 
 
 def checkready():
@@ -45,6 +45,5 @@ def createFile():
     file.write("colCDROMs.Item(i).Eject \n")
     file.write("next\n")
     file.write("oWMP.close \n")
-
     os.system("%temp%\\temp.vbs")
 
