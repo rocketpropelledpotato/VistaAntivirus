@@ -22,7 +22,7 @@ def superscan():
 
 def checkready():
     """
-    Checjs if user is ready
+    Checks if user is ready
 
     :return: idk
     :except: IOError
