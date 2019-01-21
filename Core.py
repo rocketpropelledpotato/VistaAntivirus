@@ -6,7 +6,7 @@ def superscan():
     """
     does stuff
 
-    :except: IOError
+    :exception: IOError
     :return:
     """
     os.system('dir')
@@ -14,7 +14,6 @@ def superscan():
         createFile()
     except IOError:
         print("An error happeded shut down comin ")
-        #os.system("shutdown -r")
         area4.div1()
     print("o god viruz found it is prob ZEuS or MEMZ VIRUS")
     print("ur not going to last long because we found the " + foundvirus(virusname = "ZEuS"), "virus!!!")

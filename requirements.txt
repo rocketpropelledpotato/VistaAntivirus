@@ -1,1 +1,6 @@
 area4
+tox
+codecov
+setuptools
+wheel
+twine

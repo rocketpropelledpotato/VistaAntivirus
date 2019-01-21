@@ -2,4 +2,8 @@
 launcher
 """
 from Core import checkready
-checkready()
+import os
+
+theOS = os.getenv("TRAVIS_OS_NAME")
+if not theOS == "linux":
+    checkready()
